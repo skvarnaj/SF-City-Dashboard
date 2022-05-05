@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  padding-right: 5%;
+}
+
+li {
+  float: right;
+  font-size: 20px ;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+ul li.left {float: left;}
+
+</style>
+</head>
+<body>
+
+<ul>
+    <li><a href="{{ url_for('add') }}">What I Would Add</a></li>
+  <li><a href="{{ url_for('graphic') }}">Graphic Dashboard</a></li>
+  <li><a href="{{ url_for('dashboard') }}">Modern Dashboard</a></li>
+  <li class="left"><a href="{{ url_for('home') }}">Welcome</a></li>
+  
+</ul>
+
+</body>
+</html>
+    {% block content %}
+    {% endblock %}

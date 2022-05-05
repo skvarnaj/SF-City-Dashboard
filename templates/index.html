@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<html>
+    <head>
+        <style>body{font-family: arial; font-size: 10pt; background: url('https://images.pexels.com/photos/850796/pexels-photo-850796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-color: rgb(36, 35, 35);}
+        img{display: block;  width: 300px; margin: auto; margin-bottom: 5%;}
+        h1{text-align: center; font-size: 50px;}
+        p{text-align: center; font-size: 17px; padding-top: 50px; font-family: "arial";}
+        h4{text-align: center; font-size: 25px;}
+        h2{font-family: arial; font-size: 25pt; padding-left: 10px; color: #383838;}
+        li{line-height: 1em; margin-bottom: 12px;}
+        span{color: blue;}
+        .wrapper{width: 90%; margin: 20px auto; }
+        .end { padding-top:4%; }
+        p .box { padding-top:5%; }
+        .box {margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.8;
+            padding: 20px;
+            filter: alpha(opacity=60);}
+        .box-bottom {
+            padding-left: 40px;
+            padding-right: 40px;}
+        @media screen and (min-width: 600px) {
+            .wrapper{width: 60%; margin: 20px auto;} 
+            p .box{
+                padding-top:2%;
+            }
+            .end {
+                padding-top:4%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                    <div>
+                        <h4 class="end" style="text-align: center; color: #ffffff">Welcome to the mock SF dashboard I made! </h4>
+                        <p style="text-align: center; color: #ffffff"> Thanks for taking the time to look around. You can browse through what I've done. Start at the "Modern Dashboard" and then you can check out
+                        a more graphic visulaization. Finally, there are some things I would add/change with more time in a full time work setting, so you can check that 
+                    tab out as well! The audience for a dashboard like this would be the citizens of SF. I would like to see dashboards like this et up in many cities where people can check 
+                it in the morning like the newspaper</p>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
+{% endblock %}

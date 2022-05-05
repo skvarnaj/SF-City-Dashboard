@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<html>
+    <head>
+        <style>body{font-family: arial; font-size: 10pt; background: url('https://images.pexels.com/photos/850796/pexels-photo-850796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-color: rgb(36, 35, 35);}
+        img{display: block;  width: 300px; margin: auto; margin-bottom: 5%;}
+        h2{font-family:arial; font-size: 10pt; padding-left: 10px; color: #383838;}
+        li{line-height: 1em; margin-bottom: 12px;}
+        span{color: blue;}
+        .wrapper{width: 90%; margin: 20px auto; }
+        .end { padding-top:4%; }
+        p .box { padding-top:5%; }
+        .box {margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.8;
+            padding: 20px;
+            filter: alpha(opacity=60);}
+        .box-bottom {
+            padding-left: 40px;
+            padding-right: 40px;}
+        @media screen and (min-width: 600px) {
+            .wrapper{width: 60%; margin: 20px auto;} 
+            p .box{
+                padding-top:2%;
+            }
+            .end {
+                padding-top:4%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                    
+                    <div>
+                        <h1 style="color: #ffffff">What I would Add</h1>
+                        <h4 class="end" style="text-align: left; color: #ffffff">What I can easily add to both of these visualizations in a short time when I'm in full time work setting:</h4>
+                        <p style="color: #ffffff"> - Dynamic x axis to query by week, month, year in the modern dashboard</p>
+                        <p style="color: #ffffff"> - More filters for week, month, and year in modern dashboard</p>
+                        <p style="color: #ffffff"> - Fully scraped data in both</p>
+                        <p style="color: #ffffff"> - 100% streamlined process where no maintenance needs to be done on the dashboard</p>
+                        <p style="color: #ffffff"> - Greatly Improved artistic ability in the graphic dashboard (I just wanted to show some form of this type of design)</p>
+                        <p style="color: #ffffff"> - Also work with different styling. It is a little dark theme</p>
+                    </div>
+            </div>
+            <div class="box-bottom">
+            </div>
+        </div>
+    </body>
+</html>
+{% endblock %}
